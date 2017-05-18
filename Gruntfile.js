@@ -62,8 +62,8 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'public/css/main.css': 'src/sass/main.scss',
-          'public/css/simple-grid.css': 'src/sass/simple-grid.scss'
+          'src/css/main.css': 'src/sass/main.scss',
+          'src/css/simple-grid.css': 'src/sass/simple-grid.scss'
         }
       }
     },
