@@ -66,6 +66,12 @@ module.exports = function(grunt) {
           'public/css/simple-grid.css': 'src/sass/simple-grid.scss'
         }
       }
+    },
+    watch: {
+      css: {
+        files: '**/*.scss',
+        tasks: ['sass']
+      }
     }
   });
 
@@ -74,10 +80,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
 
   // Default task.
   //'jshint', 'qunit', 'concat', 'uglify'
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('build', ['sass']);
 
 };
