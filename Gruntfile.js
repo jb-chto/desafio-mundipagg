@@ -56,14 +56,14 @@ module.exports = function(grunt) {
     qunit: {
       files: ['test/**/*.html']
     },
-    watch: {
-      gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
+    sass: {
+      options: {
+        sourceMap: true
       },
-      lib_test: {
-        files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'qunit']
+      dist: {
+        files: {
+          'public/css/index.css': 'src/sass/index.scss'
+        }
       }
     }
   });
@@ -73,9 +73,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-sass');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+  //'jshint', 'qunit', 'concat', 'uglify'
+  grunt.registerTask('default', ['sass']);
 
 };
