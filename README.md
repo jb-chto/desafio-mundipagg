@@ -35,13 +35,24 @@ O principal objetivo do desafio é o desenvolvimento de uma página que siga a l
 A documentação da API utilizada para obter os dados está disponível em: [GitHub Developer API](https://developer.github.com/v3/).
 
 ## Informações Iniciais
-
+Para realizar as ações há seguir, será necessário que tenha instalado em seu computador o **git** e o **node.js**. Abaixo seguem os sites para realizar o download e efetuar a instalação:
+- [Git](https://git-scm.com/downloads)
+- [Node.js - Windows/Mac](https://nodejs.org/en/download/)
+- [Node.js - Linux](https://nodejs.org/en/download/package-manager/)
 
 ### Clonando o Repositório
+Primeiro é preciso que efetue a clonagem do repositório para o seu computador para assim efetuar alterações de código. Mas antes de clonar o repositório é importante que realize um **fork**, ou seja, criar uma cópia do mesmo para o seu github. Para isso basta subir a página e clicar no botão de mesmo nome e aguardar alguns minutos. Depois basta clicar em **clone or download** e copiar a URL do respositório.
 
+Já abrindo o bash do Git para efetuar a clonagem será necessário que digite a seguinte linha de código e informe a URL copiada anteriormente:
+``` git
+git clone <url-do-repositorio>
+```
 
 ### Instalando as Dependências
-
+Para instalar as dependências do projeto basta abrir o **Prompt de Comando do Node.js** (caso você esteja no linux, basta utilizar o terminal), acessar a pasta do repositório e inserir o seguinte comando:
+``` node
+npm install
+```
 
 ## Implementação
 
