@@ -1,5 +1,5 @@
 describe('apiContributors Factory', function() {
-	var factory;
+	var factory, httpBackend;
 
 	beforeEach(module('app'));
 
