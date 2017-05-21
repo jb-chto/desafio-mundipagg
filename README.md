@@ -29,7 +29,9 @@ O principal objetivo do desafio é o desenvolvimento de uma página que siga a l
   - AngularUI Router
   - Angular Chart
   - Chart.js
-  - Grunt (Concat, Uglify, Watch, Grunt-Sass)
+  - Grunt (Concat, Uglify, Watch, Grunt-Sass, CssMin)
+  - Jasmine
+  - Karma
 
 ### Documentação Github API
 A documentação da API utilizada para obter os dados está disponível em: [GitHub Developer API](https://developer.github.com/v3/).
@@ -58,3 +60,8 @@ npm install
 
 
 ## Testes
+Já para os testes será necessário que rode o seguinte comando **node** dentro da pasta do repositório:
+``` node
+npm test
+```
+Basicamente ele irá rodar o comando `karma start`, que varrerá todos os arquivos de testes criados para apresentar se os mesmos passaram ou não.
