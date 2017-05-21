@@ -1,7 +1,7 @@
 describe('apiCommits Factory', function() {
 	var factory, httpBackend;
 
-	beforeEach(angular.mock.module('app'));
+	beforeEach(module('app'));
 
 	beforeEach(inject(function(apiCommits, $httpBackend) {
 		factory = apiCommits;
